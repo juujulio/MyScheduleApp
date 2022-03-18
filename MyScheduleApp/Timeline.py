@@ -1,5 +1,6 @@
 from datetime import date
 
+
 class Timeline:
     """
         A class that instance the timeline to put the events

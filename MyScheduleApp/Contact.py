@@ -70,3 +70,20 @@ class Contact:
         print("Email for contact:", self.__email)
         print("Phone number:", self.__phone_number)
         print("===================================================\n")
+
+
+    def __saveContact(self):
+        myContactsList = open(f"Z:\pycharm\MyScheduleApp\database\myEvents.txt", "r+")
+        savingContact = (self.__name, '-', self.__email, '-', self.__phone_number, "\n")
+        divisor = '-'
+        for contact in myContactsList:
+            currentContact = myContactsList[contact].split(divisor)
+            if currentContact[0] == self.__name or currentContact[1] == self.__email or currentContact[2] == self.__phone_number:
+                overwrite = input("You have already saved similar information, do you want to overwrite it?  (y - yes, n - no) \n")
+                if overwrite == 'y':
+                    continue
+                else:
+                    myContactsList.close()
+
+            myContactsList.write(savingContact)
+            myContactsList.close()
