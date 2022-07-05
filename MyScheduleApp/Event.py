@@ -1,6 +1,7 @@
 class Event:
     """
-        A class that instance an event in the timeline.
+        A class that instance an event in a day.
+        This class is the basic structure for build an event and fix it in a day
 
     """
 
@@ -16,5 +17,4 @@ class Event:
         pass
 
     def __saveEvent(self):
-        file = open
         pass

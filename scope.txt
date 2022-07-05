@@ -1,0 +1,24 @@
+Dimensions
+1040 x 640
+
+
+
+scope:
+
+
+backend:
+- current day system
+	- load the today events automatically
+	- show the today events in the first panel
+- show info system (the base to show all the infos in the GUI)
+- days data system (archive the events saved by user)
+	- add an event
+	- edit an event
+	- delete an event
+- next days system
+	- load the next days events automatically in the next panels
+- "show calendar" system
+	- show a updated calendar with the current day, next day, previous days, days of the week
+- notifications system
+	- flag an upcoming event
+-GUI
