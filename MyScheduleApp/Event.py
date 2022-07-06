@@ -7,8 +7,8 @@ class Event:
 
     def __init__(self, date, hour, title):
         """
-        :param date: String
-        :param hour: String
+        :param date: Date
+        :param hour: Hour
         :param title: String
         """
         self.__date = date
@@ -16,5 +16,12 @@ class Event:
         self.__title = title
         pass
 
-    def __saveEvent(self):
+    def get_date(self):
+        print(self.__date)
+        return self.__date
+        pass
+
+    def get_hour(self):
+        print(self.__date)
+        return self.__hour
         pass

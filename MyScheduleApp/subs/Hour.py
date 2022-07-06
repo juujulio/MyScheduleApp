@@ -11,4 +11,14 @@ def treat_format(hour, minutes):
         print("Correct Hour")
     pass
 
-treat_format(24, 26.2)
+
+class Hour:
+    def __init__(self, hour, minutes):
+        self.__hour = hour
+        self.__minutes = minutes
+        treat_format(self.__hour, self.__minutes)
+        pass
+
+    def get_hour(self):
+        hour = str(self.__hour) + ":" + str(self.__minutes)
+        return hour
